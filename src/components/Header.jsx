@@ -1,15 +1,11 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.svg";
-import home from "../assets/home.svg";
-import about from "../assets/about.svg";
-import contact from "../assets/contact.svg";
 
 export default function Header() {
   //create navbar contents array
   let navContent = [
-    { name: "Home", route: "/", img: home },
-    { name: "Contact", route: "/contact", img: contact },
-    { name: "About", route: "/about", img: about },
+    { name: "Home", route: "/", img: "" },
+    { name: "Contact", route: "/contact", img: "" },
+    { name: "About", route: "/about", img: "" },
   ];
 
   //map the above array into individual <a>
@@ -25,7 +21,7 @@ export default function Header() {
     <div className="header--container">
       <div className="header--head">
         <Link to="/">
-          <img src={logo} alt="" className="header--logo"></img>{" "}
+          <img src="" alt="" className="header--logo"></img>{" "}
         </Link>
         <p className="header--title">Girish_N</p>
       </div>
